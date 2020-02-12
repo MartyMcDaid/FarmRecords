@@ -1,6 +1,6 @@
 ﻿namespace FarmRecords
 {
-    partial class Form1
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -60,7 +60,8 @@
             // 
             this.eXitToolStripMenuItem.Name = "eXitToolStripMenuItem";
             this.eXitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.eXitToolStripMenuItem.Text = "E&Xit";
+            this.eXitToolStripMenuItem.Text = "E&xit";
+            this.eXitToolStripMenuItem.Click += new System.EventHandler(this.eXitToolStripMenuItem_Click);
             // 
             // sheepToolStripMenuItem
             // 
@@ -73,7 +74,7 @@
             // addNewSheepToolStripMenuItem
             // 
             this.addNewSheepToolStripMenuItem.Name = "addNewSheepToolStripMenuItem";
-            this.addNewSheepToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewSheepToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.addNewSheepToolStripMenuItem.Text = "&Add New Sheep";
             // 
             // mainExitButton
@@ -84,8 +85,9 @@
             this.mainExitButton.TabIndex = 1;
             this.mainExitButton.Text = "E&xit";
             this.mainExitButton.UseVisualStyleBackColor = true;
+            this.mainExitButton.Click += new System.EventHandler(this.mainExitButton_Click);
             // 
-            // Form1
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -93,7 +95,7 @@
             this.Controls.Add(this.mainExitButton);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "MainMenu";
             this.Text = "FarmRecords";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

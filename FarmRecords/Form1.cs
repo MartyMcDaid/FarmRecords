@@ -10,11 +10,31 @@ using System.Windows.Forms;
 
 namespace FarmRecords
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
-        public Form1()
+        Utilities utils = new Utilities();
+
+        public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void mainExitButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = utils.Exit();
+            if (result == DialogResult.OK)
+            {
+                this.Close();
+            }
+        }
+
+        private void eXitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = utils.Exit();
+            if (result == DialogResult.OK)
+            {
+                this.Close();
+            }
         }
     }
 }
