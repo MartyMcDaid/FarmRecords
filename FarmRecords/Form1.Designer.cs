@@ -38,9 +38,9 @@
             this.sheepToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewSheepToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainExitButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mainSheep = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -122,17 +122,6 @@
             this.mainExitButton.UseVisualStyleBackColor = true;
             this.mainExitButton.Click += new System.EventHandler(this.mainExitButton_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::FarmRecords.Properties.Resources.DSC_0745;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 92);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(559, 314);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // mainSheep
             // 
             this.mainSheep.Location = new System.Drawing.Point(38, 92);
@@ -152,6 +141,17 @@
             this.label1.Size = new System.Drawing.Size(129, 26);
             this.label1.TabIndex = 4;
             this.label1.Text = "Farm Records";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::FarmRecords.Properties.Resources.DSC_0745;
+            this.pictureBox1.Location = new System.Drawing.Point(141, 92);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(559, 314);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // MainMenu
             // 
