@@ -28,7 +28,7 @@ namespace FarmRecords
             }
         }
 
-        private void eXitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
             DialogResult result = utils.Exit();
             if (result == DialogResult.OK)
