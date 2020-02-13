@@ -32,6 +32,7 @@
             this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sheepToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewSheepToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eXitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sheepToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,7 +40,7 @@
             this.mainExitButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mainSheep = new System.Windows.Forms.Button();
-            this.addNewSheepToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -78,6 +79,12 @@
             this.sheepToolStripMenuItem1.Size = new System.Drawing.Size(51, 20);
             this.sheepToolStripMenuItem1.Text = "&Sheep";
             // 
+            // addNewSheepToolStripMenuItem1
+            // 
+            this.addNewSheepToolStripMenuItem1.Name = "addNewSheepToolStripMenuItem1";
+            this.addNewSheepToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.addNewSheepToolStripMenuItem1.Text = "&Add New Sheep";
+            // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -99,8 +106,14 @@
             this.sheepToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.sheepToolStripMenuItem.Text = "&Sheep";
             // 
+            // addNewSheepToolStripMenuItem
+            // 
+            this.addNewSheepToolStripMenuItem.Name = "addNewSheepToolStripMenuItem";
+            this.addNewSheepToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            // 
             // mainExitButton
             // 
+            this.mainExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.mainExitButton.Location = new System.Drawing.Point(703, 415);
             this.mainExitButton.Name = "mainExitButton";
             this.mainExitButton.Size = new System.Drawing.Size(75, 23);
@@ -113,7 +126,7 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::FarmRecords.Properties.Resources.DSC_0745;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(141, 92);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(559, 314);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -122,24 +135,30 @@
             // 
             // mainSheep
             // 
-            this.mainSheep.Location = new System.Drawing.Point(37, 63);
+            this.mainSheep.Location = new System.Drawing.Point(38, 92);
             this.mainSheep.Name = "mainSheep";
             this.mainSheep.Size = new System.Drawing.Size(75, 23);
             this.mainSheep.TabIndex = 3;
             this.mainSheep.Text = "&Sheep";
             this.mainSheep.UseVisualStyleBackColor = true;
             // 
-            // addNewSheepToolStripMenuItem1
+            // label1
             // 
-            this.addNewSheepToolStripMenuItem1.Name = "addNewSheepToolStripMenuItem1";
-            this.addNewSheepToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.addNewSheepToolStripMenuItem1.Text = "&Add New Sheep";
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(325, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 26);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Farm Records";
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.mainSheep);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.mainExitButton);
@@ -169,6 +188,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sheepToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addNewSheepToolStripMenuItem1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
