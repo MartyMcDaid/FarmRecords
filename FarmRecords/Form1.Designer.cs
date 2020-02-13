@@ -82,7 +82,7 @@
             // addNewSheepToolStripMenuItem1
             // 
             this.addNewSheepToolStripMenuItem1.Name = "addNewSheepToolStripMenuItem1";
-            this.addNewSheepToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.addNewSheepToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.addNewSheepToolStripMenuItem1.Text = "&Add New Sheep";
             // 
             // fileToolStripMenuItem

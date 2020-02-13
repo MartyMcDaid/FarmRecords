@@ -33,12 +33,14 @@
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sheepToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewSheepToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mainExitButton = new System.Windows.Forms.Button();
+            this.r3turnToMainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SheepMainMenuButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SheepExitButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +73,8 @@
             // sheepToolStripMenuItem1
             // 
             this.sheepToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewSheepToolStripMenuItem1});
+            this.addNewSheepToolStripMenuItem1,
+            this.r3turnToMainMenuToolStripMenuItem});
             this.sheepToolStripMenuItem1.Name = "sheepToolStripMenuItem1";
             this.sheepToolStripMenuItem1.Size = new System.Drawing.Size(51, 20);
             this.sheepToolStripMenuItem1.Text = "&Sheep";
@@ -79,18 +82,26 @@
             // addNewSheepToolStripMenuItem1
             // 
             this.addNewSheepToolStripMenuItem1.Name = "addNewSheepToolStripMenuItem1";
-            this.addNewSheepToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.addNewSheepToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
             this.addNewSheepToolStripMenuItem1.Text = "&Add New Sheep";
             // 
-            // mainExitButton
+            // r3turnToMainMenuToolStripMenuItem
             // 
-            this.mainExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.mainExitButton.Location = new System.Drawing.Point(703, 415);
-            this.mainExitButton.Name = "mainExitButton";
-            this.mainExitButton.Size = new System.Drawing.Size(75, 23);
-            this.mainExitButton.TabIndex = 2;
-            this.mainExitButton.Text = "E&xit";
-            this.mainExitButton.UseVisualStyleBackColor = true;
+            this.r3turnToMainMenuToolStripMenuItem.Name = "r3turnToMainMenuToolStripMenuItem";
+            this.r3turnToMainMenuToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.r3turnToMainMenuToolStripMenuItem.Text = "&Return To Main Menu";
+            this.r3turnToMainMenuToolStripMenuItem.Click += new System.EventHandler(this.returnToMainMenuToolStripMenuItem_Click);
+            // 
+            // SheepMainMenuButton
+            // 
+            this.SheepMainMenuButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.SheepMainMenuButton.Location = new System.Drawing.Point(625, 415);
+            this.SheepMainMenuButton.Name = "SheepMainMenuButton";
+            this.SheepMainMenuButton.Size = new System.Drawing.Size(75, 23);
+            this.SheepMainMenuButton.TabIndex = 2;
+            this.SheepMainMenuButton.Text = "&Main Menu";
+            this.SheepMainMenuButton.UseVisualStyleBackColor = true;
+            this.SheepMainMenuButton.Click += new System.EventHandler(this.mainExitButton_Click);
             // 
             // button1
             // 
@@ -142,17 +153,29 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // SheepExitButton
+            // 
+            this.SheepExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.SheepExitButton.Location = new System.Drawing.Point(703, 415);
+            this.SheepExitButton.Name = "SheepExitButton";
+            this.SheepExitButton.Size = new System.Drawing.Size(75, 23);
+            this.SheepExitButton.TabIndex = 8;
+            this.SheepExitButton.Text = "E&xit";
+            this.SheepExitButton.UseVisualStyleBackColor = true;
+            this.SheepExitButton.Click += new System.EventHandler(this.button5_Click);
+            // 
             // SheepForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.SheepExitButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.mainExitButton);
+            this.Controls.Add(this.SheepMainMenuButton);
             this.Controls.Add(this.menuStrip1);
             this.Name = "SheepForm";
             this.Text = "SheepForm";
@@ -171,11 +194,13 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sheepToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addNewSheepToolStripMenuItem1;
-        private System.Windows.Forms.Button mainExitButton;
+        private System.Windows.Forms.Button SheepMainMenuButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button SheepExitButton;
+        private System.Windows.Forms.ToolStripMenuItem r3turnToMainMenuToolStripMenuItem;
     }
 }
