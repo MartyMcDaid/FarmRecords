@@ -7,8 +7,14 @@ using System.Windows.Forms;
 
 namespace FarmRecords
 {
+    /*The Utilities class is used to call methods that
+        will be used by the other classes*/
+
     class Utilities
     {
+        /*The DialogResult Exit() method can be called to ask the user if they are sure
+         * they want to exit the program*/
+
         public DialogResult Exit()
         {
             DialogResult result;
