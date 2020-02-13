@@ -12,6 +12,12 @@ namespace FarmRecords
 {
     public partial class SheepForm : Form
     {
+        Utilities utils = new Utilities();
+
+        List<Panel> panelList = new List<Panel>();
+
+        public MainMenu refToMainMenu { get; set; }
+
         public SheepForm()
         {
             InitializeComponent();

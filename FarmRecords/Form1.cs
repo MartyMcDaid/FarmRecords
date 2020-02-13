@@ -36,5 +36,13 @@ namespace FarmRecords
                 this.Close();
             }
         }
+
+        private void mainSheep_Click(object sender, EventArgs e)
+        {
+            SheepForm sheep = new SheepForm();
+            sheep.refToMainMenu = this;
+            this.Visible = false;
+            sheep.Show();
+        }
     }
 }
