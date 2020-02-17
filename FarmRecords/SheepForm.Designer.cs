@@ -41,6 +41,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SheepExitButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -145,11 +146,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::FarmRecords.Properties.Resources.DSC_0740;
             this.pictureBox1.Location = new System.Drawing.Point(141, 92);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(559, 314);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -164,11 +166,23 @@
             this.SheepExitButton.UseVisualStyleBackColor = true;
             this.SheepExitButton.Click += new System.EventHandler(this.button5_Click);
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(377, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 26);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Sheep";
+            // 
             // SheepForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.SheepExitButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
@@ -202,5 +216,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button SheepExitButton;
         private System.Windows.Forms.ToolStripMenuItem r3turnToMainMenuToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
     }
 }
