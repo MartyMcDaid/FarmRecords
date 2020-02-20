@@ -194,7 +194,7 @@
             this.Controls.Add(this.SheepMainMenuButton);
             this.Controls.Add(this.menuStrip1);
             this.Name = "SheepForm";
-            this.Text = "SheepForm";
+            this.Text = "Sheep";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
