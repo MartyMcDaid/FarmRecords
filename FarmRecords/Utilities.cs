@@ -19,7 +19,14 @@ namespace FarmRecords
         public DialogResult ReturnToMain()
         {
             DialogResult result;
-            result = MessageBox.Show("Are you sure you want to Return To Main Menu?", "Main Menu", MessageBoxButtons.OKCancel);
+            result = MessageBox.Show("Are you sure you want to return to Main menu?", "Main Menu", MessageBoxButtons.OKCancel);
+            return result;
+        }
+
+        internal DialogResult ReturnToSheep()
+        {
+            DialogResult result;
+            result = MessageBox.Show("Are you sure you want to return to Sheep menu?", "Sheep Menu", MessageBoxButtons.OKCancel);
             return result;
         }
     }

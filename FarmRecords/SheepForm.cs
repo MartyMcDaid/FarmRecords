@@ -14,8 +14,6 @@ namespace FarmRecords
     {
         Utilities utils = new Utilities();
 
-        List<Panel> panelList = new List<Panel>();
-
         public MainMenu refToMainMenu { get; set; }
 
         public SheepForm()
@@ -23,9 +21,13 @@ namespace FarmRecords
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAddNewSheep_Click(object sender, EventArgs e)
         {
-
+            AddNewSheep addNewSheep = new AddNewSheep();
+            addNewSheep.refToMainMenu = this.refToMainMenu;
+            addNewSheep.refToSheep = this;
+            this.Visible = false;
+            addNewSheep.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -71,6 +73,15 @@ namespace FarmRecords
                 this.refToMainMenu.Show();
                 this.Close();
             }
+        }
+
+        private void addNewSheepToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AddNewSheep addNewSheep = new AddNewSheep();
+            addNewSheep.refToMainMenu = this.refToMainMenu;
+            addNewSheep.refToSheep = this;
+            this.Visible = false;
+            addNewSheep.Show();
         }
     }
 }
