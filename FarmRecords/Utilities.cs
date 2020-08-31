@@ -9,6 +9,7 @@ namespace FarmRecords
 {
     class Utilities
     {
+        //Exit Dialog Box
         public DialogResult Exit()
         {
             DialogResult result;
@@ -16,6 +17,7 @@ namespace FarmRecords
             return result;
         }
 
+        //Return to Main menu Dialog box
         public DialogResult ReturnToMain()
         {
             DialogResult result;
@@ -23,10 +25,19 @@ namespace FarmRecords
             return result;
         }
 
+        //Return to Sheep Menu Dialog box
         internal DialogResult ReturnToSheep()
         {
             DialogResult result;
             result = MessageBox.Show("Are you sure you want to return to Sheep menu?", "Sheep Menu", MessageBoxButtons.OKCancel);
+            return result;
+        }
+
+        //Clear Form Dialog Box
+        internal DialogResult ClearForm()
+        {
+            DialogResult result;
+            result = MessageBox.Show("Are you sure you want to Clear form", "Clear Form", MessageBoxButtons.OKCancel);
             return result;
         }
     }
